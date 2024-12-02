@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Color Test</title>
+        <style>
+            *{
+                margin:0px;
+                padding:0px;
+                box-sizing:border-box;
+            }
+            body{
+                background-color: black;
+            }
+            .one{
+                width:100px;
+                height:100px;
+                background-color: aqua;
+                border-radius:50%;
+                margin:10px;
+                padding:10px;
+                box-shadow:0px 0px 50px aqua;
+            }
+            .two{
+                width:100px;
+                height:100px;
+                background-color: purple;
+                border-radius:50%;
+                margin:10px;
+                padding:10px;
+                box-shadow:0px 0px 50px purple;
+            }
+            .three{
+                width:100px;
+                height:100px;
+                background-color: red;
+                border-radius:50%;
+                margin:10px;
+                padding:10px;
+                box-shadow:0px 0px 50px red;
+            }
+            .four{
+                width:100px;
+                height:100px;
+                background-color: yellow;
+                border-radius:50%;
+                margin:10px;
+                padding:10px;
+                box-shadow:0px 0px 50px yellow;
+            }
+            .in-size{
+                width:150px;
+                height:120px;
+                margin:10px;
+                padding:10px;
+                }
+                .in1{
+                    width:100px;
+                    height:30px;
+                    border-radius:10px;
+                    margin-top:30px;
+                    padding:10px;
+                    font-size:20px;
+                }
+                p{
+                    margin-top:50px;
+                    font-size:20px;
+                    font-weight:20px;
+                    color:white;
+                }
+                .firstdiv{
+                    display:flex;
+                }
+                .secdiv{
+                    display:flex;
+                   
+                }
+                .thirddiv{
+                    display:flex;
+                }
+                .fourthdiv{
+                    display:flex;
+                }
+                .whole{
+                    width:100%;
+                    display:grid;
+                    place-items:center;
+                    display:flex;
+                }
+                .sub{
+                    width:80px;
+                    padding:10px;
+                    margin-left:50%;
+                    background-color: rgb(110, 110, 214);
+                    border-radius:5px;
+                }
+                .section{
+                    margin:100px;
+                    margin-left:50px;
+                    margin-top:20px;
+                }
+                .sc1{
+                    background-color: rgb(170, 161, 150);
+                    width:150px;
+                    height:100px;
+                    border-radius:20px;
+                    box-shadow:0px 0px 20px rgb(203, 119, 16);
+                  margin-top:10px;
+                   
+                }
+                .sc{
+                    font-size:25px;
+                    color:black;
+                   place-items: center; 
+                   padding:10px;  
+                   margin-top:25px;   
+                }
+                @media screen and (max-width:939px) {
+                    .section{
+                        margin-left:150px;
+                    }
+
+                }
+              
+            </style>
+            <body>
+                <div class="whole">
+                        <div class="section">
+                                <div class="firstdiv">
+                                        <div class="one">
+                                        </div>
+                                        <div class="in-size">
+                                        <input class="in1" type="text" value="" id="a1">
+                                        </div>
+                                        <p id="p1"></p>
+                                </div>
+                                <div class="secdiv">
+                                        <div class="two">
+                                        </div>
+                                        <div class="in-size">
+                                        <input class="in1" type="text" value="" id="a2">
+                                        </div>
+                                        <p id="p2"></p>
+                                </div>
+                                <div class="thirddiv">
+                                        <div class="three">
+                                        </div>
+                                        <div class="in-size">
+                                        <input class="in1" type="text" value="" id="a3">
+                                        </div>
+                                        <p id="p3"></p>
+                                </div>
+                                <div class="fourthdiv">
+                                        <div class="four">
+                                        </div>
+                                        <div class="in-size">
+                                        <input class="in1" type="text" value="" id="a4">
+                                        </div>
+                                        <p id="p4"></p>
+                                </div>
+                                <input type="button" class="sub" value="submit" onclick="clickbutt()">
+                               
+                        </div>
+                        <div class="sc1">
+                        <p  class="sc" id="s1">SCORE IS:</p>
+                        </div>
+             </div>
+            <script>
+              x=0;
+             function clickbutt(){
+                x=0;
+                a=document.getElementById("a1").value;
+                if(a==="aqua"){
+                    a="aqua color"
+                    x=x+1;
+                }
+                else{
+                   a="aqua color is missing" 
+                }
+                document.getElementById("p1").innerHTML=a
+             
+                b=document.getElementById("a2").value;
+                if(b==="purple"){
+                    b="purple color"
+                    x=x+1;
+                }
+                else{
+                   b="purple color is missing" 
+                }
+                document.getElementById("p2").innerHTML=b
+                 c=document.getElementById("a3").value;
+                if(c==="red"){
+                    c="red color"
+                    x=x+1;
+                }
+                else{
+                   c="red color is missing" 
+                }
+                document.getElementById("p3").innerHTML=c
+                d=document.getElementById("a4").value;
+                if(d==="yellow"){
+                    d="yellow color"
+                    x=x+1;
+                }
+                else{
+                   d="yellow color is missing" 
+                }
+                document.getElementById("p4").innerHTML=d
+                document.getElementById("s1").innerHTML="SCORE IS:"+x
+             }
+            </script>
+            
+           
+            </body>
+</html>
