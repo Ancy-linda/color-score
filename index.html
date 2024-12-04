@@ -15,11 +15,11 @@
             .one{
                 width:100px;
                 height:100px;
-                background-color: blue;
+                background-color: aqua;
                 border-radius:50%;
                 margin:10px;
                 padding:10px;
-                box-shadow:0px 0px 50px blue;
+                box-shadow:0px 0px 50px aqua;
             }
             .two{
                 width:100px;
@@ -85,25 +85,22 @@
                     width:100%;
                     display:grid;
                     place-items:center;
-                  
+                   
                 }
                 .sub{
                     width:80px;
                     padding:10px;
                     margin-left:50%;
-                    background-color: white;
+                    background-color: rgb(110, 110, 214);
                     border-radius:5px;
-                    color:black;
                 }
-            .sub:hover{
-                background-color:aqua;
                 .section{
                     margin:100px;
                     margin-left:50px;
                     margin-top:20px;
                 }
-               
-              .sc{
+                
+                .sc{
                     font-size:20px;
                     color:black;
                    background-color: azure; 
@@ -111,12 +108,17 @@
                    border-radius:15px;
 
                 }
-              
+                .h1{
+                    border:4px solid green;
+                }
+                .h2{
+                    border:4px solid red;
+                }
               
             </style>
             <body>
                 <div class="whole">
-                     <div class="sc1">
+                    <div class="sc1">
                         <p  class="sc" id="s1">SCORE IS:</p>
                         </div>
                         <div class="section">
@@ -163,41 +165,51 @@
                 x=0;
                 a=document.getElementById("a1").value;
                 if(a==="aqua"){
-                    a="aqua color"
+                    a="aqua"
                     x=x+1;
+                    document.getElementById("a1").classList.add("h1")
                 }
                 else{
-                   a="aqua color is missing" 
+                   a="correct answer is aqua" 
+                   document.getElementById("a1").classList.add("h2")
                 }
                 document.getElementById("p1").innerHTML=a
-             
                 b=document.getElementById("a2").value;
                 if(b==="purple"){
-                    b="purple color"
+                    b="purple "
                     x=x+1;
+                    document.getElementById("a2").classList.add("h1")
                 }
                 else{
-                   b="purple color is missing" 
+                   b="correct answer is purple" 
+                   document.getElementById("a2").classList.add("h2")
                 }
                 document.getElementById("p2").innerHTML=b
+                
                  c=document.getElementById("a3").value;
                 if(c==="red"){
-                    c="red color"
+                    c="red "
                     x=x+1;
+                    document.getElementById("a3").classList.add("h1")
                 }
                 else{
-                   c="red color is missing" 
+                   c="correct answer is red" 
+                   document.getElementById("a3").classList.add("h2")
                 }
                 document.getElementById("p3").innerHTML=c
+               
                 d=document.getElementById("a4").value;
                 if(d==="yellow"){
-                    d="yellow color"
+                    d="yellow "
                     x=x+1;
+                    document.getElementById("a4").classList.add("h1")
                 }
                 else{
-                   d="yellow color is missing" 
+                   d="correct answer is yellow" 
+                   document.getElementById("a4").classList.add("h2")
                 }
                 document.getElementById("p4").innerHTML=d
+               
                 document.getElementById("s1").innerHTML="SCORE IS:"+x
              }
             </script>
