@@ -164,7 +164,9 @@
              function clickbutt(){
                 x=0;
                 a=document.getElementById("a1").value;
+                a=a.toLowerCase()
                 if(a==="aqua"){
+                
                     a="aqua"
                     x=x+1;
                     document.getElementById("a1").classList.add("h1")
@@ -175,6 +177,7 @@
                 }
                 document.getElementById("p1").innerHTML=a
                 b=document.getElementById("a2").value;
+                b=b.toLowerCase()
                 if(b==="purple"){
                     b="purple "
                     x=x+1;
@@ -187,6 +190,7 @@
                 document.getElementById("p2").innerHTML=b
                 
                  c=document.getElementById("a3").value;
+                 c=c.toLowerCase()
                 if(c==="red"){
                     c="red "
                     x=x+1;
@@ -199,6 +203,7 @@
                 document.getElementById("p3").innerHTML=c
                
                 d=document.getElementById("a4").value;
+                d=d.toLowerCase()
                 if(d==="yellow"){
                     d="yellow "
                     x=x+1;
